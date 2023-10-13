@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Popins", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(45deg, #010758, #c3b1e1);
+}
+
+/* header navbar  */
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem;
+  padding: 1rem 2rem;
+  background: #cbc3e3;
+  border: 0;
+  outline: 0;
+  border-radius: .7rem;
+}
+
+.navbar h1 {
+  color: #32CD32;
+}
+
+.navbar h1 span {
+  color: #ff2963;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+
+/* home page */
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(45deg, #010758, #c3b1e1);
+  color: #fff;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  font-weight: 500;
+  margin-top: -3rem;
+  margin-bottom: 3rem;
+}
+
+.hero h1 span {
+  color: #ff2963;
+}
+
+textarea {
+  width: 38rem;
+  height: 16rem;
+  background: #cbc3e3;
+  color: #36454f;
+  font-size: 1rem;
+  border: 0;
+  outline: 0;
+  padding: 1.4rem;
+  border-radius: 0.7rem;
+  resize: none;
+  margin-bottom: 2rem;
+}
+
+textarea::placeholder {
+  font-size: 1rem;
+  color: #36454f;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+  width: 38rem;
+}
+
+button {
+  display: flex;
+  justify-items: center;    
+  background: #ff2963;
+  color: #fff;
+  font-size: 1rem;
+  padding: 0.7rem 2rem;
+  border-radius: 2.1rem;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+}
+
+button svg {
+    margin-right: 0.4rem;
+}
+
+
+select {
+  flex: 1;
+  color:#36454f;
+  background: #cbc3e3;
+  height: 3rem;
+  padding: 0 1.3rem;
+  outline: 0;
+  border: 0;
+  border-radius: 2.2rem;
+  appearance: none;
+  background-image: url(images/images-removebg-preview.png);
+  background-repeat: no-repeat;
+  background-size: 1rem;
+  background-position-x: calc(100% - 20px);
+  background-position-y: 1.4rem;
+}   
+
+
+/* contact page */
+
+
+
+@media(max-width:760px) {
+  html {
+    font-size: 80%;
+  }
+}
+
+@media(max-width:580px) {
+  html {
+    font-size: 60%;
+  }
+}
+
+@media(max-width:490px) {
+  html {
+    font-size: 50%;
+  }
+  button {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    gap: 0.1rem;
+  } 
+}
