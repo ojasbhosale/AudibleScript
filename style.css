@@ -129,7 +129,7 @@ select {
   border: 0;
   border-radius: 2.2rem;
   appearance: none;
-  background-image: url(images/images-removebg-preview.png);
+  background-image: url(images-removebg-preview.png);
   background-repeat: no-repeat;
   background-size: 1rem;
   background-position-x: calc(100% - 20px);
