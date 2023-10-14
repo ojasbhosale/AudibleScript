@@ -1,11 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   font-family: "Popins", sans-serif;
   box-sizing: border-box;
+  scroll-behavior: smooth;
+  text-decoration: none;
 }
+
 
 body {
   background: linear-gradient(45deg, #010758, #c3b1e1);
@@ -15,10 +18,10 @@ body {
 
 header {
   position: fixed;
-  top: 0;
-  left: 0;
+  /* top: 0;
+  left: 0; */
   width: 100%;
-  z-index: 100;
+  /* z-index: 100;  */
 }
 
 .navbar {
@@ -31,11 +34,11 @@ header {
   background: #cbc3e3;
   border: 0;
   outline: 0;
-  border-radius: .7rem;
+  border-radius: 0.7rem;
 }
 
 .navbar h1 {
-  color: #32CD32;
+  color: #32cd32;
 }
 
 .navbar h1 span {
@@ -50,6 +53,16 @@ header {
   gap: 2rem;
 }
 
+.menu a {
+  color: #010758;
+
+  transition: 0.3s;
+}
+
+.menu a:hover,
+.menu a.active {
+  color: #ff2963;
+}
 
 /* home page */
 
@@ -62,6 +75,8 @@ header {
   min-height: 100vh;
   background: linear-gradient(45deg, #010758, #c3b1e1);
   color: #fff;
+  /* margin-top: 3rem; */
+  padding-top: 5rem;
 }
 
 .hero h1 {
@@ -103,7 +118,7 @@ textarea::placeholder {
 
 button {
   display: flex;
-  justify-items: center;    
+  justify-items: center;
   background: #ff2963;
   color: #fff;
   font-size: 1rem;
@@ -115,13 +130,12 @@ button {
 }
 
 button svg {
-    margin-right: 0.4rem;
+  margin-right: 0.4rem;
 }
-
 
 select {
   flex: 1;
-  color:#36454f;
+  color: #36454f;
   background: #cbc3e3;
   height: 3rem;
   padding: 0 1.3rem;
@@ -129,31 +143,140 @@ select {
   border: 0;
   border-radius: 2.2rem;
   appearance: none;
-  background-image: url(images-removebg-preview.png);
+  background-image: url(images/images-removebg-preview.png);
   background-repeat: no-repeat;
   background-size: 1rem;
   background-position-x: calc(100% - 20px);
   background-position-y: 1.4rem;
-}   
+}
 
+/* Divider : home & contact */
+
+.divider {
+  border: 0.08rem solid #cbc3e3;
+}
 
 /* contact page */
 
+.contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 12rem 1rem 6rem 6rem;
+}
+
+.contact1 {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.contact1 h1 {
+  margin-left: 1rem;
+  font-size: 3rem;
+  font-weight: 600;
+  color: #ff2963;
+}
+
+.contact1 p {
+  color: #fff;
+}
+
+.platform {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-left: 2rem;
+}
+
+.platform a {
+  font-size: 3rem;
+}
+
+.platform1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+}
+
+.platform2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+}
+
+.platform3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+}
+
+.contact2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 3rem;
+  gap: 0.6rem;
+}
+
+.contact2 input {
+  padding: 0.8rem;
+  background: #cbc3e3;
+  color: #36454f;
+  font-size: 1rem;
+  border: 0;
+  outline: 0;
+  border-radius: 0.5rem;
+}
+
+.msg {
+  background: #cbc3e3;
+  color: #36454f;
+  font-size: 1rem;
+  height: 20rem;
+  width: 18rem;
+  padding: 1rem;
+  border: 0;
+  outline: 0;
+  border-radius: 0.5rem;
+}
+
+@media (max-width: 920px) {
+  .contact {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+  
+  }
+}
 
 
-@media(max-width:760px) {
+
+
+
+@media (max-width: 760px) {
   html {
     font-size: 80%;
   }
 }
 
-@media(max-width:580px) {
+@media (max-width: 580px) {
   html {
     font-size: 60%;
   }
 }
 
-@media(max-width:490px) {
+@media (max-width: 490px) {
   html {
     font-size: 50%;
   }
@@ -163,5 +286,5 @@ select {
     justify-items: center;
     align-items: center;
     gap: 0.1rem;
-  } 
+  }
 }
